@@ -1,10 +1,9 @@
 const express = require('express');
-const router = express.router();
-const server = require('file-server');
+const router = express.Router();
 
 //upload route
-router.post('/upload',(req, res, err)=>{
-    res.send('file uploade');
+router.post('/upload',(req, res) => {
+    res.send('file uploaded');
 });
 
 module.exports = router;
